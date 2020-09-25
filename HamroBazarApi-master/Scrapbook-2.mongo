@@ -1,0 +1,2 @@
+// db.users.insert({email: "admin", password:"12345", admin: true})
+db.users.findOneAndUpdate({email: "admin"}, {$set: {admin:true}})
